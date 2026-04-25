@@ -1,8 +1,9 @@
 #!/bin/bash
+# EndeavourOS setup for greetd and ReGreet
 
 # --- CONFIGURATION ---
 # GitHub Raw links for config files
-REPO_RAW_URL="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main"
+REPO_RAW_URL="https://raw.githubusercontent.com/killajoe/eos-greetd-gtkgreet/refs/heads/main/"
 GREETD_CONF_URL="$REPO_RAW_URL/config.toml"
 REGREET_CONF_URL="$REPO_RAW_URL/regreet.toml"
 
@@ -39,14 +40,12 @@ chmod 644 /etc/greetd/config.toml
 chmod 644 /etc/greetd/regreet.toml
 
 # --- 5. SERVICE ACTIVATION ---
-echo "Disabling legacy Display Managers and enabling greetd..."
+echo "Disabling any other Display Managers and enabling greetd..."
 
 # -f option will replace with any existing DMs if they exist
 
 systemctl -f enable greetd.service
 
-echo "---------------------------------------------------"
-echo "Installation complete! ReGreet is now configured."
-echo "Note: Ensure /etc/greetd/regreet.toml points to a"
-echo "valid wallpaper path before rebooting."
-echo "---------------------------------------------------"
+echo "-----------------------------------------------------------------"
+echo "Installation complete! ReGreet for EndeavourOS is now configured."
+echo "-----------------------------------------------------------------"
