@@ -4,7 +4,7 @@
 # install needed packages
 sudo pacman -S greetd greetd-regreet cage
 # copy configs into system
-sudo wget -q https://raw.githubusercontent.com/killajoe/eos-greetd-gtkgreet/refs/heads/main/config.toml /etc/greetd/config.toml
+sudo wget -q https://raw.githubusercontent.com/killajoe/eos-greetd-gtkgreet/refs/heads/main/config.toml -O /etc/greetd/config.toml
 sudo wget -q https://raw.githubusercontent.com/killajoe/eos-greetd-gtkgreet/refs/heads/main/regreet.toml -O /etc/greetd/regreet.toml
 # fix user groups for greeter user
 sudo usermod -aG video,render greeter
