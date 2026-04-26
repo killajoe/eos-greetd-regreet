@@ -46,6 +46,10 @@ echo "Disabling any other Display Managers and enabling greetd..."
 
 systemctl -f enable greetd.service
 
+# fix cursor upside down in VM
+echo "fix cursor upside down in VM..."
+echo 'WLR_NO_HARDWARE_CURSORS=1' >> /etc/environment
+
 echo "-----------------------------------------------------------------"
 echo "Installation complete! ReGreet for EndeavourOS is now configured."
 echo "-----------------------------------------------------------------"
