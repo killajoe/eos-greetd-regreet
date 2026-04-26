@@ -4,7 +4,7 @@
 ## Manual setup
 ```
 # install needed packages
-sudo pacman -S greetd greetd-regreet cage
+sudo pacman -S greetd greetd-regreet cage eos-qogir-icons arc-gtk-theme-eos
 # copy configs into system
 sudo wget -q https://raw.githubusercontent.com/killajoe/eos-greetd-regreet/refs/heads/main/config.toml -O /etc/greetd/config.toml
 sudo wget -q https://raw.githubusercontent.com/killajoe/eos-greetd-regreet/refs/heads/main/regreet.toml -O /etc/greetd/regreet.toml
