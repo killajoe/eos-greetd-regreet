@@ -30,4 +30,4 @@
 
 or go dangerous:
 
-`curl -sL https://raw.githubusercontent.com/killajoe/eos-greetd-regreet/refs/heads/main/setup.sh -o setup.sh && less setup.sh && read -p "Execute script? (y/n): " confirm && [[ $confirm == [yY] ]] && sudo bash setup.sh; rm setup.sh`
+`curl -sL https://raw.githubusercontent.com/killajoe/eos-greetd-regreet/refs/heads/main/setup.sh -o setup.sh && cat setup.sh && echo -e "\n--- END OF SCRIPT ---\n" && read -p "Press Enter to run as root or Ctrl+C to cancel..." && sudo bash setup.sh && rm setup.sh`
