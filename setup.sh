@@ -9,7 +9,7 @@ REGREET_CONF_URL="$REPO_RAW_URL/regreet.toml"
 
 # --- 1. PACKAGE INSTALLATION ---
 echo "Installing required packages (greetd, ReGreet, cage)..."
-pacman -S --needed --noconfirm greetd greetd-regreet cage
+pacman -S --needed --noconfirm greetd greetd-regreet cage eos-qogir-icons arc-gtk-theme-eos
 
 # --- 2. PREPARE DIRECTORIES ---
 echo "Preparing configuration directories..."
