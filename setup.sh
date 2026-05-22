@@ -13,7 +13,7 @@ pacman -S --needed --noconfirm greetd greetd-regreet cage eos-qogir-icons arc-gt
 
 # --- 2. PREPARE DIRECTORIES ---
 echo "Preparing configuration directories..."
-sudo mkdir -p /etc/greetd
+mkdir -p /etc/greetd
 
 # --- 3. DOWNLOAD CONFIGS (wget) ---
 echo "Downloading configuration files from GitHub..."
